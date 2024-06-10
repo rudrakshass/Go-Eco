@@ -24,6 +24,8 @@ app.get("/", (req,res)=>{res.render("index")})
 app.get("/getpoints", (req,res)=>{res.render("getpoints")});
 app.get("/leaderboard", (req,res)=>{res.render("leaderboard")});
 app.get("/tasks", (req,res)=>{res.render("tasks")});
+app.get("/faq", (req,res)=>{res.render("faq")});
+app.get("/rewards", (req,res)=>{res.render("rewards")});
 
 //server instance
 app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});

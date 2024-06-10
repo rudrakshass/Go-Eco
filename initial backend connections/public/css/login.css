@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+   background-color: #57A6A1;
+    font-family: sans-serif;
+    
+}
+ .main{
+    width: 380px;
+    height:350px;
+    background-color: #6B8A7A;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 1px 1px 9px black;
+
+ }
+
+ #chk{
+    display:none;
+ }
+  
+  .Login p{
+   width: 50%;
+   height:50px ;
+   font-size: 48px;
+   font-family:fantasy;
+     
+   justify-content: center;
+   display: flex;
+   margin: 18px auto;
+   padding: 10px;/
+ } 
+
+ label{
+    color:white;
+    font-size: 38px;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    margin-bottom: 10px;
+ }
+
+ input{
+    width: 60%;
+    height: 20px;
+    background:white;
+    justify-content: center;
+    display: flex;
+    margin: 18px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+ }
+ 
+ 
+ 
+
+ button{
+   width: 30%;
+   height: 40px;
+   margin: 10px auto;
+   justify-content: center;
+   display: block;
+   color: white;
+   background: yellowgreen;
+   font-size: 20px;
+   font-weight: bold;
+    margin-top: 18px;
+    outline: none;
+    border:none;
+    border-radius: 10px;
+    transition: .3s ease-in;
+    cursor: pointer;
+    box-shadow: 10px 15x 20px rgb(0, 0, 0);
+ }
+
+
+  button:hover{
+   border: 2px solid #ff96ad;
+   color: #ff96ad;
+    background-color: #17181c;
+  }
