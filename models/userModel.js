@@ -23,7 +23,7 @@ async function startDatabase(url){
 
 async function createUser(user,res){
     await userModel.create(user).then(()=>{
-        res.send("<html><script>alert('Account created successfully');window.location.replace(`/signup`)</script></html>")
+        res.send("<html><script>alert('Account created successfully');window.location.replace(`/login`)</script></html>")
         // res.redirect("/login");
     }).catch((err)=>{
         if(String(err.code)==="11000"){
