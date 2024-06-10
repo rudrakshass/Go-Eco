@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt");
 
 mongoose.set('strictQuery', true);
 
@@ -22,8 +23,8 @@ async function startDatabase(url){
 
 async function createUser(user,res){
     await userModel.create(user).then(()=>{
-        res.write("<html><script>alert('Account created successfully')</script></html>")
-        res.redirect("/login");
+        res.send("<html><script>alert('Account created successfully');window.location.replace(`/signup`)</script></html>")
+        // res.redirect("/login");
     }).catch((err)=>{
         if(String(err.code)==="11000"){
             res.send("<html><script>alert('Account already exists');window.location.replace(`/signup`)</script></html>")
@@ -31,4 +32,22 @@ async function createUser(user,res){
     });
 }
 
-module.exports = {startDatabase, createUser};
+async function findUser(u_password, u_email,res,req){
+    const result = await userModel.findOne().where({email : u_email});
+    console.log(result);
+    if(result != null){
+        bcrypt.compare(u_password, result.password, (err, result) => {
+            if (result) {
+                res.redirect("/getpoints");
+            } else {
+                res.write("<html><script>alert('Invalid credentials');window.location.replace(`/login`)</script></html>");
+            }
+        });
+
+    }
+    else{
+        res.send("<html><script>alert('User not found');window.location.replace(`/login`)</script></html>");
+    }
+}
+
+module.exports = {startDatabase, createUser, findUser};

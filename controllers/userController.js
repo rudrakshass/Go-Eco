@@ -1,4 +1,4 @@
-const {createUser} = require("../models/userModel");
+const {createUser, findUser} = require("../models/userModel");
 const bcrypt = require("bcrypt")
 
 async function userSignup(req,res){
@@ -16,4 +16,20 @@ async function userSignup(req,res){
     createUser(user,res);
 }
 
-module.exports = {userSignup};
+function IsUserLogin(req,res){
+    if(req.session.authorized){
+        res.send("this is profile page");
+    }
+    else{
+        res.redirect("/login");
+        
+    }
+}
+
+function userLogin(req, res) {
+    const email = req.body.email;
+    const password = req.body.password;
+    findUser(password, email,res,req);
+}
+
+module.exports = {userSignup, userLogin, IsUserLogin};

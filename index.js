@@ -1,5 +1,6 @@
 //server constants
 const express = require("express");
+const session = require("express-session");
 const path = require("path");
 
 //database constants
@@ -7,7 +8,7 @@ const {startDatabase} = require("./models/userModel");
 connection_url = "mongodb://localhost:27017/";
 
 //controllers
-const {userSignup} = require("./controllers/userController");
+const {userSignup,userLogin, IsUserLogin} = require("./controllers/userController");
 //modules
 
 //declarations
@@ -19,6 +20,7 @@ const PORT = 8080;
 //middleware
 app.use(express.urlencoded({ extended:false }));
 app.use(express.static(path.join(__dirname, '/public')));
+app.use(session({secret : "secretsessionkey"}));
 
 //setting up rendering engine
 app.set("view engine", "ejs");
@@ -26,7 +28,7 @@ app.set("view engine", "ejs");
 //routings below
 
 //get requests
-app.get("/", (req,res)=>{res.render("index")})
+app.get("/", IsUserLogin)
 app.get("/getpoints", (req,res)=>{res.render("getpoints")});
 app.get("/leaderboard", (req,res)=>{res.render("leaderboard")});
 app.get("/tasks", (req,res)=>{res.render("tasks")});
@@ -37,14 +39,14 @@ app.get("/signup", (req,res)=>{res.render("signup")});
 
 //post requests
 app.post("/", (req,res)=>{res.send("post req sent to /")});
-app.post("/login", (req,res)=>{res.send("post req sent to /login")});
+app.post("/login", userLogin);
 app.post("/signup",userSignup);
 
 //database connection
-/*startDatabase(connection_url).then(()=>{
+startDatabase(connection_url).then(()=>{
     //server instance
     app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
-})*/
-app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
+})
+// app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
 
 
