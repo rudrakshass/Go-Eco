@@ -119,7 +119,7 @@
    justify-content: center;
    display: flex;
    margin: 18px auto;
-   margin-top: 0;
+   margin-top: 2rem;
    padding-bottom: 5px;
 } 
 
@@ -138,7 +138,7 @@
  input{
    width: 15rem;
    height: 35px;
-   background:#e6f7ff;
+   background:#b8d5e2;
    justify-content: center;
    display: flex;
    margin: 30px auto;
@@ -149,9 +149,15 @@
 }
  
  
- 
+p{
+   color:white;
 
- button{
+}
+p a{
+   color: rgb(0, 110, 255);
+}
+
+button{
    width: 40%;
    height: 45px;
    margin: 10px auto;
@@ -161,7 +167,8 @@
    background: rgb(30, 148, 177);
    font-size: 20px;
    font-weight: bold;
-   margin-top: 20%;
+   margin-top: 10%;
+   margin-bottom: 10%;
    outline: none;
    border:none;
    border-radius: 10px;
