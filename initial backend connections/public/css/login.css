@@ -91,20 +91,20 @@
    width: 100%;
 }
 .main{
-    width: 380px;
-    height:350px;
-    margin: 2rem auto;
-    margin-top: 10%;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 1px 1px 9px black;
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
-    border: 1px solid rgba(156, 255, 87, 0.57);
- }
+   width: 380px;
+   height:350px;
+   margin: 2rem auto;
+   margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 1px 1px 9px black;
+   backdrop-filter: blur(6.8px);
+   -webkit-backdrop-filter: blur(6.8px);
+   border: 1px solid rgba(255, 255, 255, 0.85);
+}
 
 
  #chk{
@@ -121,32 +121,32 @@
    margin: 18px auto;
    margin-top: 0;
    padding-bottom: 30px;
- } 
+} 
 
  label{
-    color:white;
-    font-size: 38px;
-    justify-content: center;
-    display: flex;
-    margin: 60px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: .5s ease-in-out;
-    margin-bottom: 10px;
- }
+   color:white;
+   font-size: 38px;
+   justify-content: center;
+   display: flex;
+   margin: 60px;
+   font-weight: bold;
+   cursor: pointer;
+   transition: .5s ease-in-out;
+   margin-bottom: 10px;
+}
 
  input{
-    width: 100%;
-    height: 20px;
-    background:white;
-    justify-content: center;
-    display: flex;
-    margin: 18px auto;
-    padding: 10px;
-    border: none;
-    outline: none;
-    border-radius: 50px;
- }
+   width: 100%;
+   height: 20px;
+   background:white;
+   justify-content: center;
+   display: flex;
+   margin: 18px auto;
+   padding: 10px;
+   border: none;
+   outline: none;
+   border-radius: 50px;
+}
  
  
  
@@ -161,18 +161,18 @@
    background: yellowgreen;
    font-size: 20px;
    font-weight: bold;
-    margin-top: 18px;
-    outline: none;
-    border:none;
-    border-radius: 10px;
-    transition: .3s ease-in;
-    cursor: pointer;
-    box-shadow: 10px 15x 20px rgb(0, 0, 0);
- }
+   margin-top: 18px;
+   outline: none;
+   border:none;
+   border-radius: 10px;
+   transition: .3s ease-in;
+   cursor: pointer;
+   box-shadow: 10px 15x 20px rgb(0, 0, 0);
+}
 
 
   button:hover{
    border: 2px solid #ff96ad;
    color: #ff96ad;
-    background-color: #17181c;
-  }
+   background-color: #17181c;
+}
