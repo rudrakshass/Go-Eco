@@ -38,6 +38,7 @@ async function findUser(u_password, u_email,res,req){
     if(result != null){
         bcrypt.compare(u_password, result.password, (err, result) => {
             if (result) {
+                req.session.authorized = true;
                 res.redirect("/getpoints");
             } else {
                 res.write("<html><script>alert('Invalid credentials');window.location.replace(`/login`)</script></html>");
