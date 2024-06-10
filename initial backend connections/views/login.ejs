@@ -7,27 +7,43 @@
     <link rel="stylesheet" href="/css/login.css">
 </head>
 <body>
-    <div class="main">
-        <input type="checkbox" id="chk" aria-hidden="true">
+    <div class="background"></div>
+    <div class="banner">
+        <div class="navbar">
+            <a href="/"><img src="/img/logo.png" class="logo" alt="logo"></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/getpoints">How to get points</a></li>
+                <li><a href="/tasks">Tasks</a></li>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <li class="login-signup"><a href="/login">Login</a> / <a href="/signup">Signup</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            
+            <input type="checkbox" id="chk" aria-hidden="true">
        
-         <div class="Login">
+            <div class="Login">
             
             
-            <form action="/">
-                 <p>Login</p>
+                <form  method="POST">
+                    <h1>Login</h1>
                 
-                <input type="email" name="email" id="" placeholder="Email or Username" required="">
+                    <input type="email" name="email" id="" placeholder="Email or Username" required="">
                 
               
-                <input type="password" name="pswd" placeholder="Enter password" id="" required="">
+                    <input type="password" name="pswd" placeholder="Enter password" id="" required="">
       
            
                 
-                <button>Login </button>
+                    <button type="submit">Login </button>
 
-            </form>
-        </div>
-        </div>
-    </div> 
+                </form>
+            </div>
+    
+    </div>
+    </div>
 </body>
 </html>

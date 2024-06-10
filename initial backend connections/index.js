@@ -26,6 +26,12 @@ app.get("/leaderboard", (req,res)=>{res.render("leaderboard")});
 app.get("/tasks", (req,res)=>{res.render("tasks")});
 app.get("/faq", (req,res)=>{res.render("faq")});
 app.get("/rewards", (req,res)=>{res.render("rewards")});
+app.get("/login", (req,res)=>{res.render("login")});
+app.get("/signup", (req,res)=>{res.render("signup")});
+
+app.post("/", (req,res)=>{res.send("post req sent to /")});
+app.post("/login", (req,res)=>{res.send("post req sent to /login")});
+
 
 //server instance
 app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
