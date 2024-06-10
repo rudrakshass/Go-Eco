@@ -114,10 +114,13 @@
 .Login h1{
    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
    margin-bottom: 15%;
+   font-size: 40px;
+   color: #92a2b3;
    justify-content: center;
    display: flex;
    margin: 18px auto;
-   padding: 10px;/
+   margin-top: 0;
+   padding-bottom: 30px;
  } 
 
  label{
@@ -133,7 +136,7 @@
  }
 
  input{
-    width: 60%;
+    width: 100%;
     height: 20px;
     background:white;
     justify-content: center;
