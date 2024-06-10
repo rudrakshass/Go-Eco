@@ -41,9 +41,10 @@ app.post("/login", (req,res)=>{res.send("post req sent to /login")});
 app.post("/signup",userSignup);
 
 //database connection
-startDatabase(connection_url).then(()=>{
+/*startDatabase(connection_url).then(()=>{
     //server instance
     app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
-})
+})*/
+app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
 
 
