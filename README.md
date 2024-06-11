@@ -3,9 +3,11 @@ The Go-Eco web application incentivizes sustainable behavior by rewarding users 
 
 **Run the following commands before running the server**<br>
 1) npm init -y<br>
-2 )npm i express<br>
+2) npm i express<br>
 3) npm i mongoose<br>
 4) npm i ejs<br>
+5) npm i bcrypt
+6) npm i express-session
 
 **add the following script in package.json**<br>
 "start":"node index"
