@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "666730a1f86874ecf6b2ac88"
+  },
+  "first_name": "Minnaminnie",
+  "last_name": "Bromell",
+  "email": "mbromell0@themeforest.net",
+  "password": "$2b$10$XCdzVFk.V56/q96aiZdpg.n27da.2HnrK3SS6EOSZaxv40SCqRkym",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667312b467ace08305e90a2"
+  },
+  "first_name": "Hermy",
+  "last_name": "Hafford",
+  "email": "hhafford1@whitehouse.gov",
+  "password": "$2b$10$Vu60HUVAjaKwEejOu7kcI.atQdcm8mBCr8u3qdoLatcuq4Ch9zvR2",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66673147467ace08305e90a4"
+  },
+  "first_name": "Johny",
+  "last_name": "Denziloe",
+  "email": "jdenziloe2@tripadvisor.com",
+  "password": "$2b$10$.XJzBxocHexqA9tUd0nsQuf.yiDbsidu2gv36lth7qNUvd/ndeLQm",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666731b4fe8e42f809f27b98"
+  },
+  "first_name": "Harold",
+  "last_name": "MacEnelly",
+  "email": "hmacenelly3@slideshare.net",
+  "password": "$2b$10$2zSrG2s4kvfz5xGRoM0SleVL5UasJt.rhLn55IGql/QKpoxZSQlW6",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "666731cafe8e42f809f27b9a"
+  },
+  "first_name": "Evelyn",
+  "last_name": "Mullin",
+  "email": "emullin4@lulu.com",
+  "password": "$2b$10$MO4f14SBkeweYR3H0HQQEuQbm9qHLZr.OZ8RCn5LiHv7P2lbws392",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66673219fe8e42f809f27b9d"
+  },
+  "first_name": "Dedra",
+  "last_name": "Danilevich",
+  "email": "ddanilevich9@apache.org",
+  "password": "$2b$10$/A8NfjBA8UtZbu5BkrHNUeRd4zKk60ZvnnPYBREC5J.xyJfGg.a7G",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667322cfe8e42f809f27b9f"
+  },
+  "first_name": "Becca",
+  "last_name": "Swatman",
+  "email": "bswatman8@booking.com",
+  "password": "$2b$10$ZA.m/M43aPbr.NXTl3/KEulThEPWOuLkmXNPren0QQdNbGPrvGxUu",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667323efe8e42f809f27ba1"
+  },
+  "first_name": "Linea",
+  "last_name": "Tilby",
+  "email": "ltilby7@soup.io",
+  "password": "$2b$10$t1GS6DFIwX8eyYE2pHmN6Oop9qfkMN1HA/EDE0CbPJ3i3oKHSenZS",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667325afe8e42f809f27ba3"
+  },
+  "first_name": "Daffi",
+  "last_name": "Mersey",
+  "email": "dmersey6@netscape.com",
+  "password": "$2b$10$eYFzIFycfQMFKTvUICQ9me0hc6iW0mTNhWIgI/1LpaEZ45v7CLZjS",
+  "points": 0,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "66673289fe8e42f809f27ba5"
+  },
+  "first_name": "Bronnie",
+  "last_name": "Lisamore",
+  "email": "blisamore5@toplist.cz",
+  "password": "$2b$10$PCwB0t4Sfc26bHsBAB7H7egqTsFf8j1HjHDXt2wz0c1olqUzDkk16",
+  "points": 0,
+  "__v": 0
+}]
