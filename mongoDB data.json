@@ -6,7 +6,7 @@
   "last_name": "Bromell",
   "email": "mbromell0@themeforest.net",
   "password": "$2b$10$XCdzVFk.V56/q96aiZdpg.n27da.2HnrK3SS6EOSZaxv40SCqRkym",
-  "points": 0,
+  "points": 5,
   "__v": 0
 },
 {
@@ -17,7 +17,7 @@
   "last_name": "Hafford",
   "email": "hhafford1@whitehouse.gov",
   "password": "$2b$10$Vu60HUVAjaKwEejOu7kcI.atQdcm8mBCr8u3qdoLatcuq4Ch9zvR2",
-  "points": 0,
+  "points": 3,
   "__v": 0
 },
 {
@@ -28,7 +28,7 @@
   "last_name": "Denziloe",
   "email": "jdenziloe2@tripadvisor.com",
   "password": "$2b$10$.XJzBxocHexqA9tUd0nsQuf.yiDbsidu2gv36lth7qNUvd/ndeLQm",
-  "points": 0,
+  "points": 10,
   "__v": 0
 },
 {
@@ -39,7 +39,7 @@
   "last_name": "MacEnelly",
   "email": "hmacenelly3@slideshare.net",
   "password": "$2b$10$2zSrG2s4kvfz5xGRoM0SleVL5UasJt.rhLn55IGql/QKpoxZSQlW6",
-  "points": 0,
+  "points": 7,
   "__v": 0
 },
 {
@@ -50,7 +50,7 @@
   "last_name": "Mullin",
   "email": "emullin4@lulu.com",
   "password": "$2b$10$MO4f14SBkeweYR3H0HQQEuQbm9qHLZr.OZ8RCn5LiHv7P2lbws392",
-  "points": 0,
+  "points": 50,
   "__v": 0
 },
 {
@@ -61,7 +61,7 @@
   "last_name": "Danilevich",
   "email": "ddanilevich9@apache.org",
   "password": "$2b$10$/A8NfjBA8UtZbu5BkrHNUeRd4zKk60ZvnnPYBREC5J.xyJfGg.a7G",
-  "points": 0,
+  "points": 8,
   "__v": 0
 },
 {
@@ -72,7 +72,7 @@
   "last_name": "Swatman",
   "email": "bswatman8@booking.com",
   "password": "$2b$10$ZA.m/M43aPbr.NXTl3/KEulThEPWOuLkmXNPren0QQdNbGPrvGxUu",
-  "points": 0,
+  "points": 67,
   "__v": 0
 },
 {
@@ -83,7 +83,7 @@
   "last_name": "Tilby",
   "email": "ltilby7@soup.io",
   "password": "$2b$10$t1GS6DFIwX8eyYE2pHmN6Oop9qfkMN1HA/EDE0CbPJ3i3oKHSenZS",
-  "points": 0,
+  "points": 29,
   "__v": 0
 },
 {
@@ -94,7 +94,7 @@
   "last_name": "Mersey",
   "email": "dmersey6@netscape.com",
   "password": "$2b$10$eYFzIFycfQMFKTvUICQ9me0hc6iW0mTNhWIgI/1LpaEZ45v7CLZjS",
-  "points": 0,
+  "points": 30,
   "__v": 0
 },
 {
@@ -105,6 +105,17 @@
   "last_name": "Lisamore",
   "email": "blisamore5@toplist.cz",
   "password": "$2b$10$PCwB0t4Sfc26bHsBAB7H7egqTsFf8j1HjHDXt2wz0c1olqUzDkk16",
-  "points": 0,
+  "points": 52,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6667b938513c35b3d5cd5784"
+  },
+  "first_name": "samyak",
+  "last_name": "sh",
+  "email": "samyak.coll1905@gmail.com",
+  "password": "$2b$10$xRWTzu0TCbG59SBEqLN4z.co/9xeROl3Ru13wwlYahXxV.t9bJ7RK",
+  "points": 10,
   "__v": 0
 }]
