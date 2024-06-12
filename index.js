@@ -10,12 +10,25 @@ connection_url = "mongodb://localhost:27017/";
 //controllers
 const {userSignup,userLogin, IsUserLogin} = require("./controllers/userController");
 const {displayLeaderboard} = require("./controllers/leaderboardController");
+const {ticketController} = require("./controllers/billController");
+const {getpointsPage} = require("./controllers/getpointsController");
 //modules
 
 //declarations
 const app = express();
 const PORT = 8080;
 
+const multer = require("multer");
+
+const storage = multer.diskStorage({
+    destination : (req,file,cb)=>{
+        return cb(null, "./uploads");
+    },
+    filename : (req,file,cb)=>{
+        return cb(null, `${Date.now()}-${file.originalname}`);
+    }
+})
+const upload = multer({storage});
 
 
 //middleware
@@ -30,7 +43,7 @@ app.set("view engine", "ejs");
 
 //get requests
 app.get("/", (req,res)=>{res.render("index",{isLoggedIn : req.session.authorized})});
-app.get("/getpoints", (req,res)=>{res.render("getpoints", {isLoggedIn : req.session.authorized})});
+app.get("/getpoints", getpointsPage);
 app.get("/leaderboard", displayLeaderboard);
 app.get("/tasks", (req,res)=>{res.render("tasks", {isLoggedIn : req.session.authorized})});
 app.get("/faq", (req,res)=>{res.render("faq", {isLoggedIn : req.session.authorized})});
@@ -41,7 +54,8 @@ app.get("/profile", (req,res)=>{res.send("This is profile page")});
 
 //post requests
 app.post("/login", userLogin);
-app.post("/signup",userSignup);
+app.post("/signup", userSignup);
+app.post("/getpoints", upload.single("ticket"), ticketController);
 
 //database connection
 startDatabase(connection_url).then(()=>{

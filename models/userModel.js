@@ -39,6 +39,7 @@ async function findUser(u_password, u_email,res,req){
             if (check) {
 
                 req.session.user = {
+                    userid : result._id,
                     first_name : result.first_name,
                     last_name : result.last_name, 
                     points :  result.points
@@ -62,4 +63,4 @@ async function leaderboard(req,res){
     res.render("leaderboard", {isLoggedIn : req.session.authorized, result : result});
 }
 
-module.exports = {startDatabase, createUser, findUser, leaderboard};
+module.exports = {startDatabase, createUser, findUser, leaderboard, userModel};

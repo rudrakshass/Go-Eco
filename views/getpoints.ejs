@@ -55,8 +55,8 @@
             <h1>Upload File</h1>
             <p>You can upload your proof here:</p>
             
-                <form id="imageForm" enctype="multipart/form-data">
-                    <input type="file" id="imageUpload" accept="image/*" required>
+                <form method = "POST" action"/getpoints" id="imageForm" enctype="multipart/form-data">
+                    <input type="file" id="imageUpload" name = "ticket" accept="image/*" required>
                     <button type="submit">Upload Image</button>
                 </form>
                 <div id="imagePreview"></div>

@@ -8,6 +8,9 @@ The Go-Eco web application incentivizes sustainable behavior by rewarding users 
 4) npm i ejs<br>
 5) npm i express-session<br>
 6) npm i bcrypt<br>
+7) npm i multer<br>
+8) npm i sharp<br>
+9) npm i tesseract.js<br>
 
 **add the following script in package.json**<br>
 "start":"node index"
