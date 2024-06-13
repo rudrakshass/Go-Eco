@@ -1,0 +1,156 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height:100%;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(2.5px); 
+    z-index: -1;
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+.navbar{
+    color:white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: sticky;
+}
+.logo{
+    width: 135px;
+    cursor:pointer;
+}
+.navbar ul li{
+    list-style:none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left:0;
+    bottom:-10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.login-signup a {
+    margin: 0 5px;
+}
+
+.login-signup a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.login-signup a:hover::after {
+    width: 100%;
+}
+
+
+.rewards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.reward-item {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width: 300px;
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+
+.reward-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.reward-item h2 {
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 1.9rem;
+    margin-bottom: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.reward-item p {
+    color:white;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight:100;
+    margin-bottom: 14px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.reward-item button {
+    background-color: #009688;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.reward-item button:hover {
+    background-color: #00796b;
+}

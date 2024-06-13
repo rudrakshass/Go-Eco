@@ -3,30 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="/img/favicon-16x16.png">
-    <title>Go-Eco:Rewards</title>
+    <title>Rewards</title>
+    <link rel="stylesheet" href="/css/rewards.css">
 </head>
 <body>
     <div class="background"></div>
-    <div class="banner">
-        <div class="navbar">
-            <a href="/"><img src="/img/logo.png" class="logo" alt="logo"></a>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/getpoints">get points</a></li>
-                <li><a href="/tasks">Tasks</a></li>
-                <li><a href="/leaderboard">Leaderboard</a></li>
-                <li><a href="/faq">FAQ</a></li>
-                <li><a href="/rewards">Rewards</a></li>
-                <% if(isLoggedIn){%>
-                    <li><a href="/profile">Profile</a></li>
-                <% }else{%>
-                <li class="login-signup"><a href="/login">Login</a> / <a href="/signup">Signup</a></li>
-                <%}%>
-            </ul>
+    <div class="navbar">
+        <a href="/"><img src="/img/logo.png" class="logo" alt="logo"></a>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/getpoints">get points</a></li>
+            <li><a href="/tasks">Tasks</a></li>
+            <li><a href="/leaderboard">Leaderboard</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/rewards">Rewards</a></li>
+            <% if(isLoggedIn){%>
+                <li><a href="/profile">Profile</a></li>
+            <% }else{%>
+            <li class="login-signup"><a href="/login">Login</a> / <a href="/signup">Signup</a></li>
+            <%}%>
+        </ul>
+    </div>
+
+    <div class="content">
+        <div class="rewards-container">
+            <div class="reward-item">
+                <img src="/img/amazon-gift-card.png" alt="Amazon Gift Card">
+                <h2>Amazon Gift Card</h2>
+                <p>2000 Points</p>
+                <button>Redeem</button>
+            </div>
+            <div class="reward-item">
+                <img src="/img/flipkart-gift-card.png" alt="Flipkart Gift Card">
+                <h2>Flipkart Gift Card</h2>
+                <p>2000 Points</p>
+                <button>Redeem</button>
+            </div>
+            <div class="reward-item">
+                <img src="/img/steam-gift-card.png" alt="Steam Gift Card">
+                <h2>Steam Gift Card</h2>
+                <p>1500 Points</p>
+                <button>Redeem</button>
+            </div>
+            <div class="reward-item">
+                <img src="/img/spotify-gift-card.png" alt="Spotify Gift Card">
+                <h2>Spotify Gift Card</h2>
+                <p>1500 Points</p>
+                <button>Redeem</button>
+            </div>
         </div>
     </div>
-    
 </body>
 </html>
