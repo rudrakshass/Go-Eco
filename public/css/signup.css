@@ -146,7 +146,6 @@ input{
    background:#b8d5e2;
    justify-content: center;
    display: flex;
-   text-transform: capitalize;
    margin: 30px auto;
    padding: 10px;
    border: none;
