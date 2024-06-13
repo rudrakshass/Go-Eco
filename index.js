@@ -12,7 +12,7 @@ const {userSignup,userLogin, IsUserLogin} = require("./controllers/userControlle
 const {displayLeaderboard} = require("./controllers/leaderboardController");
 const {ticketController} = require("./controllers/billController");
 const {getpointsPage} = require("./controllers/getpointsController");
-//modules
+const {getRewards} = require("./controllers/rewardController");
 
 //declarations
 const app = express();
@@ -56,6 +56,7 @@ app.get("/profile", (req,res)=>{res.send("This is profile page")});
 app.post("/login", userLogin);
 app.post("/signup", userSignup);
 app.post("/getpoints", upload.single("ticket"), ticketController);
+app.post("/rewards/:giftcard", getRewards);
 
 //database connection
 startDatabase(connection_url).then(()=>{

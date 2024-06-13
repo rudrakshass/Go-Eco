@@ -45,7 +45,6 @@ async function findUser(u_password, u_email,res,req){
                     points :  result.points
                 };
                 req.session.authorized = true;
-                console.log(req.session.user.first_name);
                 res.redirect("/");
             } else {
                 res.write("<html><script>alert('Invalid credentials');window.location.replace(`/login`)</script></html>");
@@ -63,4 +62,9 @@ async function leaderboard(req,res){
     res.render("leaderboard", {isLoggedIn : req.session.authorized, result : result});
 }
 
-module.exports = {startDatabase, createUser, findUser, leaderboard, userModel};
+async function claimPoints(charge, req,res){
+    await userModel.updateOne({_id : req.session.user.userid}, {$inc:{points:-charge}});
+    res.render("voucher",{code : 8291037759});
+}
+
+module.exports = {startDatabase, createUser, findUser, leaderboard, userModel, claimPoints};
