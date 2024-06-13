@@ -27,39 +27,32 @@
             </ul>
         </div>
         <div class="content_getpoints">
+            <h1>Introduction</h1>
+            <p>Learn how to earn points by submitting your bus tickets and contributing to a greener planet.</p>
+
             <h1>How to Earn Points</h1>
-            <p>Start earning points by completing various eco-friendly tasks. Here's how:</p>
-            <h1>Types of Tasks</h1>
-            <ul>
-                <li><strong>Recycling tasks:</strong> Tasks that involve recycling materials correctly.</li>
-                <li><strong>Energy-saving tasks:</strong> Activities that help reduce energy consumption.</li>
-                <li><strong>Water conservation tasks:</strong> Initiatives to save water.</li>
-                <li><strong>Community service tasks:</strong> Volunteer activities that benefit the community.</li>
-            </ul>
-            <h1>How to Find Tasks</h1>
-            <p>Tasks are listed in the <a href="/tasks">Tasks</a> section. Use filters or the search bar to find tasks that interest you.</p>
+            <p>You can earn points by submitting proof of your bus ticket usage. Each valid submission will reward you with points that contribute to your overall score.</p>
+
             <h1>Task Details</h1>
             <p>Each task listing includes:</p>
             <ul>
-                <li><strong>Description:</strong> A summary of what the task involves.</li>
-                <li><strong>Points:</strong> The number of points awarded upon completion.</li>
-                <li><strong>Deadline:</strong> The date by which the task must be completed (if applicable).</li>
-                <li><strong>Steps:</strong> Instructions on how to complete the task.</li>
+                <li><strong>Description:</strong> Submit a photo of your bus ticket.</li>
+                <li><strong>Points:</strong> The number of points awarded upon submission.</li>
+                <li><strong>Deadline:</strong> Ongoing, submit as you go.</li>
+                <li><strong>Steps:</strong> Take a clear photo of your bus ticket and upload it using the submission form.</li>
             </ul>
-            <h1>Submitting Completed Tasks</h1>
-            <p>To submit a completed task, upload proof (such as photos) through the submission form on the task's page.</p>
-            <h1>Earning Points and Rewards</h1>
-            <p>Complete tasks to earn points, which can be redeemed for eco-friendly rewards. Track your progress on the <a href="/leaderboard">leaderboard</a>.</p>
-            <h1>FAQ</h1>
-            <p>Have questions? Check out our <a href="/faq">FAQ</a> or contact support for help.</p>
-            <h1>Upload File</h1>
-            <p>You can upload your proof here:</p>
+
+            <h1>Submitting Bus Tickets</h1>
+            <p>To submit a bus ticket, upload a clear photo of it through the submission form below:</p>
             
-                <form method = "POST" action"/getpoints" id="imageForm" enctype="multipart/form-data">
-                    <input type="file" id="imageUpload" name = "ticket" accept="image/*" required>
-                    <button type="submit">Upload Image</button>
-                </form>
-                <div id="imagePreview"></div>
+            <h1>Upload File</h1>
+            <p>You can upload your bus ticket proof here:</p>
+
+            <form method = "POST" action"/getpoints" id="imageForm" enctype="multipart/form-data">
+            <input type="file" id="imageUpload" name = "ticket" accept="image/*" required>
+            <button type="submit">Upload Image</button>
+            </form>
+            <div id="imagePreview"></div>
         </div>
 
     </div>
