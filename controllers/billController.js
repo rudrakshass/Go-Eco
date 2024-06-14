@@ -13,8 +13,8 @@ async function ticketController(req,res){
     const dimensions = await sharp(`./uploads/${image_details.filename}`).metadata();
     //resizing image
     const left = 0;
-    const top = Math.floor(3 * dimensions.height / 4) + 50;
-    const quarterWidth = Math.floor(dimensions.width / 2)-50;
+    const top = Math.floor(3 * dimensions.height / 4) + 35;
+    const quarterWidth = Math.floor(dimensions.width / 2)-35;
     const quarterHeight = dimensions.height - top;
 
     await sharp(`./uploads/${image_details.filename}`)
