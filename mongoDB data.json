@@ -6,7 +6,7 @@
   "last_name": "Bromell",
   "email": "mbromell0@themeforest.net",
   "password": "$2b$10$XCdzVFk.V56/q96aiZdpg.n27da.2HnrK3SS6EOSZaxv40SCqRkym",
-  "points": 5,
+  "points": 3000,
   "__v": 0
 },
 {
@@ -19,7 +19,7 @@
   "password": "$2b$10$Vu60HUVAjaKwEejOu7kcI.atQdcm8mBCr8u3qdoLatcuq4Ch9zvR2",
   "points": 3,
   "__v": 0
-},
+},  
 {
   "_id": {
     "$oid": "66673147467ace08305e90a4"

@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Voucher</title>
+    <link rel="stylesheet" href="/css/rewards.css">
+    <link rel="icon" href="/img/favicon-16x16.png">
+    <title>Go-Eco:Voucher</title>
 </head>
 <body>
-    <h1>Your code</h1><br>
-    <h2><%=code %></h2>
+    <div class="background"></div>
+    <div class="banner">
+        <div class="navbar">
+            <a href="/"><img src="/img/logo.png" class="logo" alt="logo"></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/getpoints">get points</a></li>
+                <li><a href="/tasks">Tasks</a></li>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <% if(isLoggedIn){%>
+                    <li><a href="/profile">Profile</a></li>
+                <% }else{%>
+                <li class="login-signup"><a href="/login">Login</a> / <a href="/signup">Signup</a></li>
+                <%}%>
+            </ul>
+        </div>
+        <div class="content_voucher">
+            <p>Your Code</p><br>
+            <h2><%=code %></h2>
+        </div>
+    </div>
+
 </body>
 </html>

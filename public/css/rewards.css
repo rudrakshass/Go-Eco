@@ -154,3 +154,27 @@ html, body{
 .reward-item button:hover {
     background-color: #00796b;
 }
+
+.content_voucher {
+    text-align: center;
+    color: rgb(49, 37, 37);
+    margin: 20% auto;
+    padding: 2rem;
+    width: 20%;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-top: 15%;
+}
+
+.content_voucher p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0;
+}
+.content_voucher h2 {
+    font-size: 3rem;
+    color: #ca861a;
+    margin-top: 1rem;
+}
