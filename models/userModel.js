@@ -64,7 +64,7 @@ async function leaderboard(req,res){
 
 async function claimPoints(charge, req,res){
     await userModel.updateOne({_id : req.session.user.userid}, {$inc:{points:-charge}});
-    res.render("voucher",{code : 8291037759});
+    res.render("voucher",{isLoggedIn : req.session.authorized, code : 8291037759});
 }
 
 module.exports = {startDatabase, createUser, findUser, leaderboard, userModel, claimPoints};
