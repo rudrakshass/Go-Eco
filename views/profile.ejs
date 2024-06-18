@@ -6,6 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="user">
+        <p1>Name</p1><br>
+        <p1><%=`${user.first_name} ${user.last_name}`%></p1><br><br>
+        <p1>Points</p1><br>
+        <p1><%=user.points %></p1>
+    </div>
+    <br>
+    <div>
+        <form method = "POST" action = "/profile">
+            <button type="submit">LOGOUT</button>
+        </form>
+    </div>
 </body>
 </html>

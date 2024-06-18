@@ -13,6 +13,7 @@ const {displayLeaderboard} = require("./controllers/leaderboardController");
 const {ticketController} = require("./controllers/billController");
 const {getpointsPage} = require("./controllers/getpointsController");
 const {getRewards} = require("./controllers/rewardController");
+const {displayProfile, logout} = require("./controllers/profileController");
 
 //declarations
 const app = express();
@@ -50,13 +51,14 @@ app.get("/faq", (req,res)=>{res.render("faq", {isLoggedIn : req.session.authoriz
 app.get("/rewards", IsUserLogin);
 app.get("/login", (req,res)=>{res.render("login")});
 app.get("/signup", (req,res)=>{res.render("signup")});
-app.get("/profile", (req,res)=>{res.send("This is profile page")});
+app.get("/profile", displayProfile);
 
 //post requests
 app.post("/login", userLogin);
 app.post("/signup", userSignup);
 app.post("/getpoints", upload.single("ticket"), ticketController);
 app.post("/rewards/:giftcard", getRewards);
+app.post("/profile", logout);
 
 //database connection
 startDatabase(connection_url).then(()=>{
