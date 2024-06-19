@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/profile.css">
 </head>
+
 <body>
-    <div class="user">
-        <p1>Name</p1><br>
-        <p1><%=`${user.first_name} ${user.last_name}`%></p1><br><br>
-        <p1>Points</p1><br>
-        <p1><%=user.points %></p1>
-    </div>
-    <br>
-    <div>
-        <form method = "POST" action = "/profile">
-            <button type="submit">LOGOUT</button>
-        </form>
+    <div class="background"></div>
+
+    <div class="banner">
+        <div class="navbar">
+            <a href="/"><img src="/img/logo.png" class="logo" alt="logo"></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/getpoints">get points</a></li>
+                <li><a href="/tasks">Tasks</a></li>
+                <li><a href="/leaderboard">Leaderboard</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="/rewards">Rewards</a></li>
+                <% if(isLoggedIn){%>
+                    <li><a href="/profile">Profile</a></li>
+                <% }else{%>
+                <li class="login-signup"><a href="/login">Login</a> / <a href="/signup">Signup</a></li>
+                <%}%>            
+            </ul>
+      </div>
+      </div>
+    
+    <div class="container">
+        
+        <div class="back side">
+            <div class="content">
+
+                <h1>GO-ECO</h1>
+                <p>Go-Eco is a platform that encourages eco-friendly actions by rewarding users with points for
+                    completing green tasks. These points can be redeemed for eco-friendly rewards and users can compete
+                    on our leaderboard.
+                </p>
+                <form method="POST" action="/profile">
+                    <input type="submit" value="LOGOUT">
+                </form>
+            </div>
+        </div>
+        <div class="front side">
+            <div class="content">
+                <h1>Profile</h1>
+                <form>
+                    <label class="type"> Name :</label>
+                    <h3>
+                        <%=`${user.first_name} ${user.last_name} `%>
+                    </h3>
+                    <label class="type"> E-mail :</label>
+                    <h3>
+                        <%=`${user.email}`%>
+                    </h3>
+
+
+                    <label class="type"> Points :</label>
+                    <h3>
+                        <%=user.points%>
+                    </h3>
+                    <!-- <input type="text" id="star5" name="rating" value=""  placeholder="total points" /> -->
+                </form>
+            </div>
+        </div>
+
     </div>
 </body>
+
 </html>

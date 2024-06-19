@@ -42,7 +42,8 @@ async function findUser(u_password, u_email,res,req){
                     userid : result._id,
                     first_name : result.first_name,
                     last_name : result.last_name, 
-                    points :  result.points
+                    points :  result.points,
+                    email : result.email
                 };
                 req.session.authorized = true;
                 res.redirect("/");
