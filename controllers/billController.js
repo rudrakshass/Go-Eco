@@ -34,9 +34,7 @@ async function ticketController(req,res){
 function readTicket(image_details, filename,res){
     tesseract.recognize(`./cropped/${filename}`,'eng').then((image)=>{
         const regex = /\b\d{10}\b/g;
-        console.log(image.data.text)
         const match = image.data.text.match(regex);
-        console.log(match);
         if(match){
             //updating image details
             image_details.ticket_id = Number(match[0]);
