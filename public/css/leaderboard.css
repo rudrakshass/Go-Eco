@@ -121,15 +121,28 @@ html, body{
     font-size: 3em; 
     font-family: 'Poppins', sans-serif;
     position: relative;
-    color: #961522e6; 
+    color: #ffffffe6; 
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 table {
     width: 80%; 
     margin: 0 auto; 
-    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0; 
     font-size: 1.8em; 
     font-family: 'Poppins', sans-serif;
+    backdrop-filter: blur(10.9px);
+    -webkit-backdrop-filter: blur(10.9px);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    border-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: hidden; 
 }
 
 th, td {
@@ -137,7 +150,8 @@ th, td {
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2); 
     background-color: rgba(41, 128, 185, 0.3); 
-    color: rgb(243, 146, 0); 
+    color: rgb(255, 255, 255); 
+    
 }
 
 th {
