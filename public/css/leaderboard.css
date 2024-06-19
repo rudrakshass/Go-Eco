@@ -59,7 +59,7 @@ html, body{
 }
 
 .navbar ul li a{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
     color: white;
     text-transform: uppercase;

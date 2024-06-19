@@ -15,7 +15,19 @@
     background-position: center;
     filter: blur(2.5px); 
     z-index: -1;
-}body {
+}
+
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Black tint */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+body {
 	height: 100vh;
 	display: -webkit-box;
 	display: -ms-flexbox;

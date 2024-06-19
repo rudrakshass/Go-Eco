@@ -13,45 +13,47 @@
     <div class="background"></div>
 
     
-
-    <div class="container">
+    <div class="banner">
         
-        <div class="back side">
-            <div class="content">
+        <div class="container">
+            
+            <div class="back side">
+                <div class="content">
 
-                <h1>GO-ECO</h1>
-                <p>Go-Eco is a platform that encourages eco-friendly actions by rewarding users with points for
-                    completing green tasks. These points can be redeemed for eco-friendly rewards and users can compete
-                    on our leaderboard.
-                </p>
-                <form method="POST" action="/profile">
-                    <input type="submit" value="LOGOUT">
-                </form>
+                    <h1>GO-ECO</h1>
+                    <p>Go-Eco is a platform that encourages eco-friendly actions by rewarding users with points for
+                        completing green tasks. These points can be redeemed for eco-friendly rewards and users can compete
+                        on our leaderboard.
+                    </p>
+                    <form method="POST" action="/profile">
+                        <input type="submit" value="LOGOUT">
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="front side">
-            <div class="content">
-                <h1>Profile</h1>
-                <form>
-                    <label class="type"> Name :</label>
-                    <h3>
-                        <%=`${user.first_name} ${user.last_name} `%>
-                    </h3>
-                    <label class="type"> E-mail :</label>
-                    <h3>
-                        <%=`${user.email}`%>
-                    </h3>
+            <div class="front side">
+                <div class="content">
+                    <h1>Profile</h1>
+                    <form>
+                        <label class="type"> Name :</label>
+                        <h3>
+                            <%=`${user.first_name} ${user.last_name} `%>
+                        </h3>
+                        <label class="type"> E-mail :</label>
+                        <h3>
+                            <%=`${user.email}`%>
+                        </h3>
 
 
-                    <label class="type"> Points :</label>
-                    <h3>
-                        <%=user.points%>
-                    </h3>
-                </form>
-                
+                        <label class="type"> Points :</label>
+                        <h3>
+                            <%=user.points%>
+                        </h3>
+                    </form>
+                    
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
 </body>
 
