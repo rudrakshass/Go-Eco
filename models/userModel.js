@@ -70,7 +70,6 @@ async function claimPoints(charge, req,res){
 
 async function profilePoints(req,res){
     const points = await userModel.findOne({_id : req.session.user.userid}, {points : true});
-    console.log(points);
     userdetails = req.session.user;
     res.render("profile", {isLoggedIn : req.session.authorized, user : userdetails, points : points.points});
 }
