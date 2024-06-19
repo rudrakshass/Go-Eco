@@ -3,8 +3,7 @@ The Go-Eco web application incentivizes sustainable behavior by rewarding users 
 
 **NOTE**<br>
 MongoDB compass required to run the program<br>
-replace the value of the "connection_url" variable with your mongoDB connection string in the index.js file<br>
-test change
+replace the value of the "connection_url" variable with your mongoDB connection string in the index.js file
 
 **Run the following command in the terminal to start the server**<br>
 npm start
