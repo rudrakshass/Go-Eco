@@ -65,6 +65,5 @@ startDatabase(connection_url).then(()=>{
     //server instance
     app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
 })
-// app.listen(PORT, ()=>{console.log(`Server started on PORT ${PORT}`)});
 
 
