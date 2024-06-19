@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="img/favicon-16x16.png">
-    <title>Go-Eco:Leaderboard</title>
+    <link rel="stylesheet" href="/css/leaderboard.css">
+    <link rel="icon" href="/img/favicon-16x16.png">
+    <title>Go-Eco: Leaderboard</title>
 </head>
 <body>
     <div class="background"></div>
@@ -27,17 +27,28 @@
 
                 
             </ul>
-        </div> 
-        <div class = "result">
-            <%let i=1 ;for(let res of result){%>
-                <div>
-                <span style="color:white"><%-i++%></span>
-                <span style="color:white"><%=res.first_name%></span>
-                <span style="color:white"><%=res.points%></span>
-                <div>
-            <%}%>
+        </div>
+        <div class="leaderboard">
+            <h1>Leaderboard</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.no</th>
+                        <th>Player Name</th>
+                    <th>Total points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <%let i=1 ;for(let res of result){%>
+                        <tr>
+                            <td class="ranking" data-ranking=""><%-i++%></td>
+                            <td><%=res.first_name%></td>
+                            <td><%=res.points%></td>
+                        </tr>
+                    <%}%>
+                </tbody>
+            </table>
         </div>
     </div>
-    
 </body>
 </html>
