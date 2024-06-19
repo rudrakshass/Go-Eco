@@ -12,7 +12,6 @@ async function uploadTicket(res, image_details){
     //checking if ticket already exists
     const ticket = await ticketModel.findOne({ticket_id : image_details.ticket_id});
     if(ticket!=null){
-        console.log("Enetered if");
         res.send("<html><script>alert('Ticket already uploaded'); window.location.replace('/getpoints')</script></html>");
         
     }
