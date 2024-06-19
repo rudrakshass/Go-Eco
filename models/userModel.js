@@ -68,4 +68,11 @@ async function claimPoints(charge, req,res){
     res.render("voucher",{isLoggedIn : req.session.authorized, code : 8291037759});
 }
 
-module.exports = {startDatabase, createUser, findUser, leaderboard, userModel, claimPoints};
+async function profilePoints(req,res){
+    const points = await userModel.findOne({_id : req.session.user.userid}, {points : true});
+    console.log(points);
+    userdetails = req.session.user;
+    res.render("profile", {isLoggedIn : req.session.authorized, user : userdetails, points : points.points});
+}
+
+module.exports = {startDatabase, createUser, findUser, leaderboard, userModel, claimPoints, profilePoints};

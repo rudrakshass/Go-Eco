@@ -1,6 +1,7 @@
+const {profilePoints} = require("../models/userModel");
+
 function displayProfile(req,res){
-    userdetails = req.session.user;
-    res.render("profile", {isLoggedIn : req.session.authorized, user : userdetails});
+    profilePoints(req,res);
 }
 
 function logout(req,res){
