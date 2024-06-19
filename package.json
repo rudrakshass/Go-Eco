@@ -1,0 +1,23 @@
+{
+  "name": "go-eco",
+  "version": "1.0.0",
+  "description": "The Go-Eco web application incentivizes sustainable behavior by rewarding users for eco-friendly actions such as recycling and energy conservation. Through an intuitive interface, users can track their contributions in real-time and earn points redeemable for eco-friendly rewards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.4.1",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.4",
+    "tesseract.js": "^5.1.0"
+  }
+}
