@@ -28,24 +28,9 @@
         </div>
         
         <div class="container">
-            
-            <div class="back side">
-                <div class="content">
-
-                    <h1>GO-ECO</h1>
-                    <p>Go-Eco is a platform that encourages eco-friendly actions by rewarding users with points for
-                        completing green tasks. These points can be redeemed for eco-friendly rewards and users can compete
-                        on our leaderboard.
-                    </p>
-                    <form method="POST" action="/profile">
-                        <input type="submit" value="LOGOUT">
-                    </form>
-                </div>
-            </div>
-            <div class="front side">
                 <div class="content">
                     <h1>Profile</h1>
-                    <form>
+                    <form class="textnstuff">
                         <label class="type"> Name :</label>
                         <h2>
                             <%=`${user.first_name} ${user.last_name} `%>
@@ -61,10 +46,10 @@
                             <%=points%>
                         </h1>
                     </form>
-                    
+                    <form method="POST" action="/profile">
+                        <input type="submit" value="LOGOUT">
+                    </form>
                 </div>
-            </div>
-
         </div>
     </div>
 </body>
