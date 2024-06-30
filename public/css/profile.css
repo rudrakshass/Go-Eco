@@ -16,18 +16,85 @@
     filter: blur(2.5px); 
     z-index: -1;
 }
-
 .banner {
+   width: 100%;
+   min-height: 100vh;
+   background: rgba(0, 0, 0, 0.5);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding-bottom: 2rem;
+}
+.navbar {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
     width: 100%;
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.5); /* Black tint */
+    padding: 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+	padding-bottom: 0;
 }
 
-body {
+
+.logo{
+   width: 135px;
+   cursor:pointer;
+}
+.navbar ul li{
+   list-style:none;
+   display: inline-block;
+   margin: 0 20px;
+   position: relative;
+}
+
+.navbar ul li a{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-decoration: none;
+   color: white;
+   text-transform: uppercase;
+}
+
+.navbar ul li::after{
+   content: '';
+   height: 3px;
+   width: 0;
+   background: #009688;
+   position: absolute;
+   left:0;
+   bottom:-10px;
+   transition: 0.5s;
+}
+.navbar ul li:hover::after{
+   width: 100%;
+}
+
+.login-signup a {
+   margin: 0 5px;
+}
+
+.login-signup a::after {
+   content: '';
+   height: 3px;
+   width: 0;
+   background: #009688;
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   transition: 0.5s;
+}
+
+.login-signup a:hover::after {
+   width: 100%;
+}
+
+.banner {
 	height: 100vh;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -41,25 +108,22 @@ body {
 	-webkit-perspective: 1000px;
 	perspective: 1000px; 
 	-webkit-transform-style: preserve-3d; 
-	 transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	position: relative;
-	 /* background-color:#ADD899;
-    background-image: url(https://qph.cf2.quoracdn.net/main-qimg-c86ee5b20f19f72aa9980779db747386-lq); */
-	
-    font-family: "Montserrat";
+	font-family: "Montserrat";
     backdrop-filter: blur(4.5px);
--webkit-backdrop-filter: blur(4.5px);
-border: 1px solid rgba(255, 255, 255, 0.8);
+	-webkit-backdrop-filter: blur(4.5px);
 }
 
 .container {
-	min-width: 700px;
-	min-height: 350px;
-	border-radius: 20px;
-	position: relative;
-	-webkit-transition: 1.5s ease-in-out;
-	transition: 1.5s ease-in-out;
-	transform-style: preserve-3d;
+    min-width: 700px;
+    min-height: 350px;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s ease-in-out;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .side {
@@ -185,5 +249,3 @@ my button style
 	background-color: #fff;
 	color: #122;
 }
-
-
