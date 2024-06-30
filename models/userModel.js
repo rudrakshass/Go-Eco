@@ -58,9 +58,9 @@ async function findUser(u_password, u_email,res,req){
     }
 }
 
-async function leaderboard(req,res){
+async function leaderboard(req,res, callback){
     const result = await userModel.find({}, {first_name : true, _id:false, points : true}).sort({points : -1});
-    res.render("leaderboard", {isLoggedIn : req.session.authorized, result : result});
+    callback(result);
 }
 
 async function claimPoints(charge, req,res){
