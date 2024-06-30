@@ -115,8 +115,10 @@ html, body{
 .leaderboard h1 {
     background-color: rgba(37, 136, 186, 0.432);
     text-align: center;
+    text-transform: uppercase;
     margin: 0 auto; 
-    max-width: 80%; 
+    margin-top:4rem;
+    max-width: 55%;
     padding: 20px;
     font-size: 3em; 
     font-family: 'Poppins', sans-serif;
@@ -127,15 +129,14 @@ html, body{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
 }
-
 table {
-    width: 80%; 
+    width: 55%; 
     margin: 0 auto; 
     border-collapse: separate;
     border-spacing: 0; 
     font-size: 1.8em; 
     font-family: 'Poppins', sans-serif;
-    backdrop-filter: blur(10.9px);
+    backdrop-filter: blur(15.9px);
     -webkit-backdrop-filter: blur(10.9px);
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 15px;
@@ -146,31 +147,32 @@ table {
 }
 
 th, td {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.2); 
-    background-color: rgba(41, 128, 185, 0.3); 
-    color: rgb(255, 255, 255); 
-    
+    background-color: rgba(50, 50, 50, 0.5); 
+    color: #ffffff; 
 }
 
 th {
-    background-color: rgba(29, 69, 231, 0.618); 
-    color: #fff;
+    background-color: rgba(0, 100, 200, 0.8); 
+    color: #ffffff;
     text-transform: uppercase;
 }
 
 tr:hover {
-    background-color: rgba(41, 127, 185, 0.604); 
+    background-color: rgba(0, 80, 160, 0.7); 
+
+
 .ranking {
     font-weight: bold;
     position: relative;
     font-size: 1.8em; 
-    color: #2980b9; 
+    color: #257a91; 
     text-align: center;
+}
 }
 
 .ranking::before {
     content: attr(data-ranking);
-    
 }

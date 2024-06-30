@@ -125,9 +125,9 @@ font-size: 15px;
 }
 .type{
     font-size: 35px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* margin-bottom: 10px; */
 }
-
 .container:hover {
 	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
