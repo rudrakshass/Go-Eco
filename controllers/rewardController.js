@@ -1,56 +1,61 @@
-const {claimPoints} = require("../models/userModel");
+const {claimPoints, profilePoints} = require("../models/userModel");
 
 function getRewards(req,res){
     let charge = 0;
-    switch(req.params.giftcard){
-        case "amazon" :        
-            // res.send(req.params.giftcard);
-            if(req.session.user.points<2000){
+    profilePoints(req,res,(points)=>{
+        switch(req.params.giftcard){
+            case "amazon" :                        
+                if(points.points<2000){
+                    res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
+                    return;
+                }
                 
-                res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
-                return;
-            }
-            
-            charge = 2000;
-            claimPoints(charge,req,res);
-            break;
-
-        case "flipkart" :            
-            // res.send(req.params.giftcard);
-            if(req.session.user.points<2000){
+                charge = 2000;
+                claimPoints(charge,req,res, ()=>{
+                    res.render("voucher",{isLoggedIn : req.session.authorized, code : 8291037759});
+                });
+                break;
+    
+            case "flipkart" :            
+                if(points.points<2000){
+                    
+                    res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
+                    return;
+                }
                 
-                res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
-                return;
-            }
-            
-            charge = 2000;
-            claimPoints(charge,req,res);
-            break;
-
-        case "steam" :    
-            // res.send(req.params.giftcard);
-            if(req.session.user.points<1500){
+                charge = 2000;
+                claimPoints(charge,req,res, ()=>{
+                    res.render("voucher",{isLoggedIn : req.session.authorized, code : 8291037759});
+                });
+                break;
+    
+            case "steam" :    
+                if(points.points<1500){
+                    
+                    res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
+                    return;
+                }
                 
-                res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
-                return;
-            }
-            
-            charge = 1500;
-            claimPoints(charge,req,res);
-            break;
-
-        case "spotify" :            
-            // res.send(req.params.giftcard);
-            if(req.session.user.points<1500){
+                charge = 1500;
+                claimPoints(charge,req,res, ()=>{
+                    res.render("voucher",{isLoggedIn : req.session.authorized, code : 8291037759});
+                });
+                break;
+    
+            case "spotify" :;
+                if(points.points<1500){
+                    
+                    res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
+                    return;
+                }
                 
-                res.send("<html><script>alert('Sorry, you dont have enough points to claim this reward'); window.location.replace('/rewards')</script></html>");
-                return;
-            }
-            
-            charge = 1500;
-            claimPoints(charge,req,res);
-            break;            
-    }
+                charge = 1500;
+                claimPoints(charge,req,res, ()=>{
+                    res.render("voucher",{isLoggedIn : req.session.authorized, code : 8291037759});
+                });
+                break;            
+        }
+    })
 }
 
 module.exports = {getRewards};

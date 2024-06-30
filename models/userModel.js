@@ -63,15 +63,15 @@ async function leaderboard(req,res, callback){
     callback(result);
 }
 
-async function claimPoints(charge, req,res){
+async function claimPoints(charge, req,res, callback){
     await userModel.updateOne({_id : req.session.user.userid}, {$inc:{points:-charge}});
-    res.render("voucher",{isLoggedIn : req.session.authorized, code : 8291037759});
+    callback();
+    
 }
 
-async function profilePoints(req,res){
-    const points = await userModel.findOne({_id : req.session.user.userid}, {points : true});
-    userdetails = req.session.user;
-    res.render("profile", {isLoggedIn : req.session.authorized, user : userdetails, points : points.points});
+async function profilePoints(req,res,callback){
+    const points = await userModel.findOne({_id : req.session.user.userid}, {points : true, _id:false});
+    callback(points);
 }
 
 module.exports = {startDatabase, createUser, findUser, leaderboard, userModel, claimPoints, profilePoints};
