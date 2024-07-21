@@ -10,6 +10,6 @@ npm start
 
 **Contributors**<br>
 Samyak-SH : backend<br>
-rudrakshass : most of frontend<br>
+rudrakshass : frontend<br>
 shubam341 : login page frontend<br>
 yashxxxhh : leaderboard frontend<br>
